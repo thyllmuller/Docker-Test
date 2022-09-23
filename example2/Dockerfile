@@ -28,9 +28,3 @@ CMD ["uvicorn","app.main:app", "--host=0.0.0.0", "--port=80"]
 # Note that we need to make the application externally visible (i.e. from outside the container) by specifying --host=0.0.0.0
 # also, need to specify port via --port and the corresponing number 80
 # multiple way of doing this such as "--host", "0.0.0.0" and "--port", "80" - there are nuances to this I think.
-
-
-# other:
-# pip freeze > requirements.txt
-# to build: "docker build -t fast2 ."
-# to run: "docker run -p 80:80 fast"
